@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Installing Apache..."
 yum install -y httpd
-ststemctl start httpd
+systemctl start httpd
 systemctl enable httpd
+echo "Copying files to /var/www/html..."
+cp -r /tmp/* /var/www/html/
