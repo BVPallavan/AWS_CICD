@@ -6,3 +6,11 @@ phases:
 artifacts:
   files:
     - '**/*'
+
+batch:
+  fast-fail: false
+  build-list:
+    - identifier: build1
+      buildspec: buildspec-build1.yml
+    - identifier: build2
+      buildspec: buildspec-build2.yml
